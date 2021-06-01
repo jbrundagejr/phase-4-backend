@@ -8,13 +8,14 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.new(user_params)
-    if user.valid?
-      user.save
-      render json: user
-    else
-      render json: {error: "Unable to create user."}
-    end
+    user = User.create(user_params)
+    render json: user
+    # if user.valid?
+    #   user.save
+    #   render json: user
+    # else
+    #   render json: {error: "Unable to create user."}
+    # end
   end
 
   def login
