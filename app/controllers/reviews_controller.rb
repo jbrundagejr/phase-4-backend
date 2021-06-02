@@ -1,4 +1,6 @@
 class ReviewsController < ApplicationController
+   
+    before_action :logged_in?
 
     def index
         reviews = Review.all
@@ -6,8 +8,14 @@ class ReviewsController < ApplicationController
     end
 
     def create
-        review = Review.create(review_params)
+        review = @user.reviews.create(review_params)
         render json: review
+    end
+
+    def destroy
+        review = @user.reviews.find(params[:id])
+        render json: review
+        review.destroy
     end
 
     private

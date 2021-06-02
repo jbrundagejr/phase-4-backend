@@ -14,19 +14,13 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(user_params)
-    render json: user
-    # if user.valid?
-    #   user.save
-    #   render json: user
-    # else
-    #   render json: {error: "Unable to create user."}
-    # end
+    render json: {name: user.name, user: user.id, token: encode_token({user_id: user.id})}
   end
 
   def login
     user = User.find_by(name: params[:name])
     if user && user.authenticate(params[:password])
-      render json: {name: user.name, token: encode_token({user_id: user.id})}
+      render json: {name: user.name, user: user.id, token: encode_token({user_id: user.id})}
     else
       render json: {message: "Name or Password is incorrect."}
     end

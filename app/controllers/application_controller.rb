@@ -11,11 +11,11 @@ class ApplicationController < ActionController::API
     token = headers.split(" ")[1]
     begin
       user_id = JWT.decode(token, "SECRETWORD")[0]["user_id"]
-      user = User.find(user_id)
+      @user = User.find(user_id)
     rescue
-      user = nil
+      @user = nil
     end
-    unless user
+    unless @user
       render json: {error: "Unable to login."}
     end
   end
