@@ -70,7 +70,7 @@ vinyl11 = Vinyl.create(band_name: "Arcade Fire",
                       in_production: true)
 vinyl12 = Vinyl.create(band_name: "Nirvana",
                       album_title: "In Utero",
-                      image_url: "https://img.discogs.com/YPuiDfbDLN4Y367WNalOujR_koo=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1714024-1405896611-9611.jpeg.jpg”",
+                      image_url: "https://img.discogs.com/YPuiDfbDLN4Y367WNalOujR_koo=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1714024-1405896611-9611.jpeg.jpg",
                       year_released: 1993,
                       in_production: true)
 vinyl13 = Vinyl.create(band_name: "A Tribe Called Quest",
