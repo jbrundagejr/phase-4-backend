@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :wants
-  resources :reviews, only: [:create]
+  resources :reviews, only: [:index, :create]
   resources :vinyls, only: [:index, :show, :create]
   resources :users, only: [:create, :index, :show]
   post "/login", to: "users#login"
