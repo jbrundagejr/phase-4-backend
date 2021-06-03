@@ -26,6 +26,12 @@ class UsersController < ApplicationController
     end
   end
 
+  # def keep_logged_in
+  #   token = request.body.read   
+  #   user = User.find(JWT.decode(token, "SECRETWORD"))
+  #   render json: {name: user.name, user: user.id, token: encode_token({user_id: user.id})}
+  # end
+
   private
 
   def user_params
