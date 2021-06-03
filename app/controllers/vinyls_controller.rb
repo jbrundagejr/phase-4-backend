@@ -1,6 +1,7 @@
 class VinylsController < ApplicationController
 
   before_action :find_vinyl, only: [:show]
+  skip_before_action :authorized
 
   def index
     vinyls = Vinyl.all
