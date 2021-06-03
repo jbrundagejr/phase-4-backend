@@ -117,19 +117,19 @@ vinyl20 = Vinyl.create(band_name: "Broken Social Scene",
 puts "Creating Users..."
 
 
-user1 = User.create(name: "zach",
-                    email: "zachkaiglerfilm@gmail.com",
+user1 = User.create(name: "Zach Kaigler",
+                    email: "zachkaiglerfilm@nunyabusiness.com",
                     password: "123",
                     image_url: "https://scontent-iad3-1.xx.fbcdn.net/v/t1.6435-9/40026881_10212217107332599_2292497308874440704_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=PkpwED39xuwAX_qL_kx&_nc_ht=scontent-iad3-1.xx&oh=35bde369e7f74c4ac24684615688a2d8&oe=60D6B6D7")
-user2 = User.create(name: "jon",
-                    email: "jbrundagejr@gmail.com",
+user2 = User.create(name: "Jon Brundage",
+                    email: "jbrundagejr@notreal.com",
                     password: "123",
                     image_url: "https://avatars.githubusercontent.com/u/79774489?v=4")
-user3 = User.create(name: "chadkroeger",
+user3 = User.create(name: "Chad Kroeger",
                     email: "nickelbackrox@gmail.com",
                     password: "123",
                     image_url: "https://www.thehandbook.com/cdn-cgi/image/width=300,height=300,fit=cover,q=85/https://files.thehandbook.com/uploads/2014/10/Chad-Kroeger.jpg")
-user4 = User.create(name: "shrek",
+user4 = User.create(name: "Shrek",
                     email: "swampman@gmail.com",
                     password: "123",
                     image_url: "https://pbs.twimg.com/profile_images/1380159518798188544/CJL-ZJXi.jpg")
